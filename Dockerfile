@@ -9,6 +9,8 @@ RUN pip install -r requirements.txt
 
 # Copy the current directory contents into the container at /app
 ADD . /app
+RUN pip uninstall .
+RUN pip install .
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
