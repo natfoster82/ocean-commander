@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
 
+
 setup(
-    name='ocean-commander',
+    name='ocean',
     version='0.1',
     packages=find_packages(),
     include_package_data=True,
@@ -11,5 +12,6 @@ setup(
     entry_points='''
         [console_scripts]
         example=ocean.scripts.example:cli
+        manage=ocean.scripts.manage:cli
     ''',
 )

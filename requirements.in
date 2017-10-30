@@ -1,3 +1,4 @@
 click
-digitalocean-python
+python-digitalocean
 fabric3
+tinydb

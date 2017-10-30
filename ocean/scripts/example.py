@@ -1,4 +1,5 @@
 import click
+from ocean.helpers import db
 
 
 @click.group()
@@ -14,6 +15,12 @@ def hello():
 @cli.command()
 def goodbye():
     click.echo('See ya!')
+
+
+@cli.command()
+@click.argument('key')
+def get_from_db(key):
+    click.echo(db.get(key))
 
 
 if __name__ == '__main__':

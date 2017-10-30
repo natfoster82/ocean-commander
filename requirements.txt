@@ -11,13 +11,14 @@ cffi==1.11.2              # via bcrypt, cryptography, pynacl
 chardet==3.0.4            # via requests
 click==6.7
 cryptography==2.1.2       # via paramiko
-digitalocean-python==0.1.5
 fabric3==1.13.1.post1
 idna==2.6                 # via cryptography, requests
 paramiko==2.3.1           # via fabric3
 pyasn1==0.3.7             # via paramiko
 pycparser==2.18           # via cffi
 pynacl==1.1.2             # via paramiko
-requests==2.18.4          # via digitalocean-python
+python-digitalocean==1.12
+requests==2.18.4          # via python-digitalocean
 six==1.11.0               # via bcrypt, cryptography, fabric3, pynacl
+tinydb==3.6.0
 urllib3==1.22             # via requests
